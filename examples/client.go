@@ -1,13 +1,13 @@
-package examples
+package main
 
 import (
-	"github.com/song940/smtp-go/smtp"
+	"github.com/lsongdev/smtp-go/smtp"
 )
 
 func RunClient() {
 	client := smtp.NewClient()
-	client.Host = "localhost"
-	client.Port = 2525
+	// client.Host = "localhost"
+	// client.Port = 2525
 	message := smtp.NewMessage()
 	message.From = "song940@gmail.com"
 	message.To = "song940@gmail.com"

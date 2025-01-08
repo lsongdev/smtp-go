@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"os"
-
-	"github.com/song940/smtp-go/examples"
 )
 
 func main() {
@@ -15,9 +13,9 @@ func main() {
 
 	switch os.Args[1] {
 	case "server":
-		examples.RunServer()
+		RunServer()
 	case "client":
-		examples.RunClient()
+		RunClient()
 	default:
 		fmt.Println("Usage: smtp-go <client|server>")
 		os.Exit(1)

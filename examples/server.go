@@ -1,11 +1,11 @@
-package examples
+package main
 
 import (
 	"fmt"
 	"log"
 	"net"
 
-	"github.com/song940/smtp-go/smtp"
+	"github.com/lsongdev/smtp-go/smtp"
 )
 
 type MyHandler struct {
